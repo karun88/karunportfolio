@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.border{
+    height: 420px;
+    width: 420px;
+    border: 10px solid #0004ff;
+    border-radius: 50%;
+    margin-left: 750px;
+
+
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Purple\Illustrated\Mountain\Desktop\image/karun1.png);
+    background-size: cover;
+    background-position: center;
+}
+.btn{
+    display: inline-block;
+    background: #5356fa;
+    padding: 10px;
+}
+.container{
+    padding:  1px 1%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #0004ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    margin-left: 46px;
+    margin-top: 175px;;
+}
+.obj{
+    margin-top: -300px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #0004ff;
+}
+/*------------about-----------*/
+#about{
+    padding: 200px 0;
+    color: #f2f3f6;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #f2f3f6;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0004ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+   list-style: none;
+   margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #5456f5;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*------project----------*/
+#services{
+    padding: 200px 0;    
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;   
+}
+.services-list div a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background:#5456f5
+}
+/*-------skills--------*/
+
+.karun{
+    width: 100%;
+    height: 100vh;
+    background: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.progress-bar{
+    background: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 50%;
+    background: blue;
+}
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.html{
+    background: #e91e63;
+    animation: html 1s linear forwards;
+}
+.css{
+    background: #cddc39;
+    animation: css 1s linear forwards;
+}
+.javascript{
+    background: #00bd04;
+    animation: javascript 1s linear forwards;
+}
+.python{
+    background: #ffeb3b;
+    animation: python 1s linear forwards;
+}
+.sql{
+    background: #9c27bc;
+    animation: sql 1s linear forwards;
+}
+.html span{
+    border: 1px solid #0004ff;
+}
+.css span{
+    border: 1px solid #0004ff;
+}
+.javascript span{
+    border: 1px solid #0004ff;
+}
+.python span{
+    border: 1px solid #0004ff;
+}
+.sql span{
+    border: 1px solid #0004ff;
+}
+@keyframes html{
+ 100%{
+    width: 86%;
+ }   
+}
+@keyframes css{
+ 100%{
+    width: 76%;
+ }   
+}
+@keyframes javascript{
+ 100%{
+    width: 78%;
+ }   
+}
+@keyframes python{
+ 100%{
+    width: 64%;
+ }   
+}
+@keyframes sql{
+ 100%{
+    width: 73%;
+ }   
+}
+/*--------contact-----*/
+.contact{
+    padding: 200px 0;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #cacbf7;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #cacbf7;
+    display: inline;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #7f81f0;
+    transform: translateY(-5px);
+}
+.btn2{
+    display: inline-block;
+    background: #8587f8;
+    padding: 10px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 50px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;   
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    background: #080808;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/*--------------css for phone----*/
+nav .fas{
+    display: none;
+}
+@media only screen and (max-with: 600px){
+    
+
+nav .fas{
+    display: block;
+    font-size: 25px;
+}
+nav ul{
+    background: #262626;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+
+}
+}
+.std ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.std ul li span{
+    color: #c7f3c8;
+    font-size: 14px;
+}
+.about-col-2 h3{
+    list-style: none;
+    margin: 10px 0;
+    color: #8ff491;
+}
+.about-col-2 .sub-title{
+    color: #00bd04;
+}
+.socialmedia{
+    display: flex;
+    
+}
+.sci{
+    position: relative;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 2em;
+    
+    perspective: 200px;
+    
+    transition: background 0.25s;
+}
+.sci li a:hover.facebook{
+    background: #080808;
+}
+.sci li a:hover.twitter{
+    background: #101010;
+}
+.sci li a:hover.instagram{
+    background: #080808;
+}
+.sci li a:hover.linkedin{
+    background: #080808;
+}
+.sci li a .fa{
+    transition: 0.25s;
+    pointer-events: none;
+}
+.sci li a:hover .fa{
+    color: white;
+}
+.header-text h5 span{
+    color: #2962f1;
+}
